@@ -38,3 +38,39 @@ console.log(messaggio);
 /* Gioco dei dadi
 Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
 Stabilire il vincitore, in base a chi fa il punteggio più alto.  */
+const giocatore = Math.floor(Math.random() * 6) + 1;
+const computer = Math.floor(Math.random() * 6) + 1;
+let risultato;
+if (giocatore > computer) {
+  risultato = "ha vinto giocatore!!";
+} else if (computer > giocatore) {
+  risultato = "ha vinto computer!!";
+} else {
+  risultato = "pareggio";
+}
+console.log(risultato);
+
+/* Gioco: Il computer genera un numero casuale da 1 a 6.
+ L’utente inserisce un numero da 1 a 6 tramite prompt.
+Vince chi ottiene il numero più alto.*/
+
+const giocatore1 = parseInt(prompt("Inserisci un numero da 1 a 6"));
+const computer1 = Math.floor(Math.random() * 6) + 1;
+
+if (isNaN(giocatore1)) {
+  alert("Inserisci un numero");
+} else if (giocatore1 < 1 || giocatore1 > 6) {
+  alert(" Inserisci un numero da uno a sei");
+} else {
+  let vincitore;
+  if (giocatore1 > computer1) {
+    vincitore = " Ha vinto giocatore!!";
+  } else if (computer1 > giocatore1) {
+    vincitore = " ha vinto computer";
+  } else {
+    vincitore = " Pareggio";
+  }
+  console.log("Giocatore:", giocatore1);
+  console.log("Computer:", computer1);
+  console.log(vincitore);
+}
