@@ -1,5 +1,4 @@
-/* !!!BONUS!!! (create la cartella separata nella stessa repository per questi esercizi)
-Snack 1
+/*Snack 1
 Inserisci un numero, se è pari stampa il numero, se è dispari stampa il numero successivo.
 
 Snack 2
